@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>portalsoatinfo — Información completa sobre el SOAT en Perú</title>
+<meta name="description" content="Todo sobre el SOAT en Perú: coberturas hasta S/26,750, vigencia, cómo funciona y preguntas frecuentes. Portal informativo independiente."/>
+<meta name="keywords" content="SOAT Peru, seguro obligatorio transito Peru, coberturas SOAT, como funciona SOAT, SOAT obligatorio Peru"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://portalsoatinfo.com/"/>
+<meta property="og:title" content="portalsoatinfo — Tu guía del SOAT en Perú"/>
+<meta property="og:description" content="Coberturas, vigencia y cómo reclamar el SOAT. Portal informativo independiente del Perú."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://portalsoatinfo.com/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"portalsoatinfo","url":"https://portalsoatinfo.com"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿El SOAT cubre al conductor?","acceptedAnswer":{"@type":"Answer","text":"Sí. Cubre a conductor, pasajeros y peatones involucrados en el accidente."}},{"@type":"Question","name":"¿El SOAT cubre daños materiales?","acceptedAnswer":{"@type":"Answer","text":"No. Solo cubre daños corporales: lesiones, invalidez y muerte."}},{"@type":"Question","name":"¿El SOAT tiene deducible?","acceptedAnswer":{"@type":"Answer","text":"No. Cubre desde el primer sol de gasto sin pago previo del beneficiario."}}]}</script>
+<style>
+/* ═══════════════════════════════════════════════
+   portalsoatinfo — Landing redesign
+   Paleta: Rojo urgencia + Ámbar conversión + Azul noche confianza
+   Psicología: rojo=urgencia/acción, ámbar=CTA/calor,
+               azul oscuro=credibilidad, blanco=claridad
+   ═══════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+::selection{background:#E8320A;color:#fff}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'DM Sans',system-ui,sans-serif;color:#0D0D1A;background:#fff;line-height:1.6;overflow-x:hidden}
+
+:root{
+  --rojo:#E8320A;       /* rojo urgencia — acción, obligatoriedad */
+  --rojo2:#C02800;      /* rojo oscuro hover */
+  --rojo3:#FFF2EE;      /* rojo tint */
+  --ambar:#F59E0B;      /* ámbar CTA — calor, conversión, confianza latina */
+  --ambar2:#D97706;     /* ámbar oscuro */
+  --ambar3:#FFFBEB;     /* ámbar tint */
+  --azul:#0F1F4B;       /* azul noche — credibilidad, seriedad, profundidad */
+  --azul2:#1A3272;      /* azul medio */
+  --azul3:#E8EDF8;      /* azul tint */
+  --gris:#3D3D56;
+  --gris2:#6B6B84;
+  --gris3:#F7F7FB;
+  --borde:#E4E4EF;
+  --w:#fff;
+  --serif:'Syne',Georgia,sans-serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+}
+
+/* cursor escudo */
+a,button,.faq-btn{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='22'%3E%3Cpath d='M9 1L17 5V11C17 16 13 20 9 21 5 20 1 16 1 11V5Z' fill='%23E8320A' stroke='%23fff' stroke-width='1.5'/%3E%3C/svg%3E") 9 11,pointer}
+
+/* ─── TOP BAR urgencia ─── */
+.topbar{background:var(--rojo);color:#fff;text-align:center;padding:9px 16px;font-size:.8rem;font-weight:600;letter-spacing:.04em;position:relative;z-index:300}
+.topbar span{background:rgba(0,0,0,.2);border-radius:3px;padding:1px 7px;margin-left:6px;font-weight:700}
+
+/* ─── HEADER ─── */
+header{position:sticky;top:0;z-index:200;background:var(--azul);border-bottom:1px solid rgba(255,255,255,.07)}
+header.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.3)}
+.hdr{max-width:1140px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex-shrink:0}
+.logo-txt{font-family:var(--serif);font-size:1.15rem;font-weight:800;color:#fff}
+.logo-txt span{color:var(--ambar)}
+nav{display:flex;align-items:center;gap:2px}
+nav a{font-size:.8rem;font-weight:600;color:rgba(255,255,255,.65);text-decoration:none;padding:6px 10px;border-radius:5px;white-space:nowrap;transition:color .15s,background .15s}
+nav a:hover{color:#fff;background:rgba(255,255,255,.1)}
+.hdr-badge{font-size:.7rem;font-weight:700;padding:4px 10px;border-radius:20px;background:rgba(245,158,11,.15);color:var(--ambar);border:1px solid rgba(245,158,11,.3);white-space:nowrap}
+.menu-btn{display:none;background:none;border:none;font-size:1.4rem;color:#fff;padding:4px}
+
+/* ─── HERO — fondo azul noche + acento rojo/ámbar ─── */
+.hero{background:var(--azul);min-height:92vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:80px 24px 96px}
+/* franjas geométricas de fondo */
+.hero::before{content:'';position:absolute;inset:0;background:
+  repeating-linear-gradient(
+    -55deg,
+    transparent,
+    transparent 80px,
+    rgba(255,255,255,.018) 80px,
+    rgba(255,255,255,.018) 81px
+  );pointer-events:none}
+.hero-blob1{position:absolute;top:-120px;right:-80px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(232,50,10,.22) 0%,transparent 70%);pointer-events:none}
+.hero-blob2{position:absolute;bottom:-60px;left:-60px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(245,158,11,.15) 0%,transparent 70%);pointer-events:none}
+/* acento diagonal rojo */
+.hero-diag{position:absolute;top:0;right:0;width:0;height:0;border-style:solid;border-width:0 260px 100px 0;border-color:transparent rgba(232,50,10,.18) transparent transparent;pointer-events:none}
+
+.hero-wrap{max-width:1100px;margin:0 auto;width:100%;position:relative;z-index:2;display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center}
+.hero-left{opacity:0;transform:translateY(28px);animation:rise .65s .1s forwards}
+
+/* pill urgencia */
+.hero-pill{display:inline-flex;align-items:center;gap:7px;background:rgba(232,50,10,.18);border:1px solid rgba(232,50,10,.4);color:#FF8066;font-size:.73rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 13px;border-radius:20px;margin-bottom:20px}
+.hero-pill-dot{width:6px;height:6px;border-radius:50%;background:#FF8066;animation:blink 1.4s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+.hero h1{font-family:var(--serif);font-size:clamp(2.3rem,5vw,3.6rem);font-weight:800;color:#fff;line-height:1.08;margin-bottom:22px;letter-spacing:-.02em}
+.hero h1 .h1-ambar{color:var(--ambar)}
+.hero h1 .h1-rojo{color:#FF6B4A}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.68);margin-bottom:36px;max-width:460px;line-height:1.68}
+
+/* stats rápidas */
+.hero-stats{display:flex;gap:28px;margin-bottom:36px;flex-wrap:wrap}
+.h-stat{display:flex;flex-direction:column}
+.h-stat-num{font-family:var(--serif);font-size:1.5rem;font-weight:800;color:var(--ambar);line-height:1}
+.h-stat-txt{font-size:.74rem;color:rgba(255,255,255,.5);font-weight:500;margin-top:2px}
+
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-ambar{display:inline-flex;align-items:center;gap:8px;background:var(--ambar);color:var(--azul);font-size:.92rem;font-weight:700;padding:14px 26px;border-radius:7px;text-decoration:none;border:none;transition:background .15s,transform .15s,box-shadow .15s;box-shadow:0 4px 20px rgba(245,158,11,.4)}
+.btn-ambar:hover{background:var(--ambar2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,158,11,.5)}
+.btn-outline-w{display:inline-flex;align-items:center;gap:6px;background:transparent;color:rgba(255,255,255,.75);font-size:.92rem;font-weight:600;padding:14px 22px;border-radius:7px;text-decoration:none;border:1.5px solid rgba(255,255,255,.22);transition:all .15s}
+.btn-outline-w:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5);color:#fff}
+
+/* tarjeta hero derecha */
+.hero-right{opacity:0;transform:translateY(16px);animation:rise .65s .4s forwards}
+.hero-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;backdrop-filter:blur(6px)}
+.hcard-head{background:rgba(232,50,10,.25);border-bottom:1px solid rgba(255,255,255,.08);padding:14px 20px;display:flex;align-items:center;gap:8px}
+.hcard-head p{font-size:.73rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.hcard-body{padding:10px 0}
+.cob-row{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid rgba(255,255,255,.05)}
+.cob-row:last-child{border-bottom:none}
+.cob-left{display:flex;align-items:center;gap:10px}
+.cob-ico{width:30px;height:30px;border-radius:7px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.2);display:flex;align-items:center;justify-content:center;font-size:.85rem;flex-shrink:0}
+.cob-nombre{font-size:.88rem;color:rgba(255,255,255,.78);font-weight:500}
+.cob-monto{font-family:var(--serif);font-size:1rem;font-weight:800;color:var(--ambar)}
+.hcard-foot{background:rgba(0,0,0,.25);padding:11px 18px;text-align:center;font-size:.72rem;color:rgba(255,255,255,.35);border-top:1px solid rgba(255,255,255,.06)}
+
+/* ─── TRUST BAR ─── */
+.trust{background:var(--azul2);padding:14px 24px;border-bottom:2px solid var(--rojo)}
+.trust-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:36px;flex-wrap:wrap}
+.t-item{display:flex;align-items:center;gap:8px;font-size:.79rem;font-weight:600;color:rgba(255,255,255,.75)}
+.t-ico{color:var(--ambar);font-size:1rem}
+
+/* ─── SEPARADORES ─── */
+.sep{overflow:hidden;line-height:0;display:block;margin-bottom:-1px}
+.sep svg{display:block;width:100%}
+
+/* ─── SECCIONES BASE ─── */
+section{padding:80px 24px}
+.container{max-width:1100px;margin:0 auto}
+.sec-kicker{display:block;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rojo);margin-bottom:8px}
+.sec-h2{font-family:var(--serif);font-size:clamp(1.75rem,3.2vw,2.4rem);font-weight:800;color:var(--azul);line-height:1.12;margin-bottom:10px;letter-spacing:-.02em}
+.sec-sub{font-size:1rem;color:var(--gris2);max-width:500px}
+.sec-head{margin-bottom:48px}
+.sec-head.center{text-align:center}
+.sec-head.center .sec-sub{margin:0 auto}
+
+/* ─── QUÉ ES ─── */
+#que-es{background:#fff}
+.que-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.que-txt h3{font-family:var(--serif);font-size:1.15rem;font-weight:800;color:var(--azul);margin-bottom:10px}
+.que-txt p{color:var(--gris2);font-size:.95rem;margin-bottom:16px;line-height:1.7}
+.ley-tag{display:flex;align-items:center;gap:10px;background:var(--azul3);border-left:3px solid var(--azul2);border-radius:0 7px 7px 0;padding:11px 16px;font-size:.84rem;color:var(--azul2);font-weight:600;margin-bottom:20px}
+.lista-v{list-style:none;display:flex;flex-direction:column;gap:9px}
+.lista-v li{display:flex;align-items:flex-start;gap:9px;font-size:.93rem;color:var(--gris)}
+.v-dot{width:20px;height:20px;border-radius:5px;background:var(--rojo);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:800;flex-shrink:0;margin-top:1px}
+/* caja consecuencias — fondo ámbar suave (urgencia moderada, no agresiva) */
+.alerta{background:linear-gradient(135deg,#1A3272 0%,#0F1F4B 100%);border-radius:14px;padding:28px;border:1px solid rgba(245,158,11,.25)}
+.alerta h4{font-family:var(--serif);font-size:1.05rem;font-weight:800;color:var(--ambar);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.alerta-lista{list-style:none;display:flex;flex-direction:column;gap:8px}
+.alerta-lista li{font-size:.88rem;color:rgba(255,255,255,.72);padding-left:16px;position:relative;line-height:1.55}
+.alerta-lista li::before{content:'→';position:absolute;left:0;color:var(--ambar);font-weight:700}
+.alerta-nota{font-size:.74rem;color:rgba(255,255,255,.4);margin-top:12px;font-style:italic}
+
+/* ─── COBERTURAS — fondo azul oscuro premium ─── */
+#coberturas{background:var(--azul)}
+#coberturas .sec-kicker{color:var(--ambar)}
+#coberturas .sec-h2{color:#fff}
+#coberturas .sec-sub{color:rgba(255,255,255,.6)}
+.cob-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.card-cob{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:22px 18px;position:relative;overflow:hidden;transition:transform .18s,border-color .18s,background .18s}
+.card-cob::after{content:attr(data-n);position:absolute;right:-6px;bottom:-18px;font-family:var(--serif);font-size:5.5rem;font-weight:800;color:rgba(255,255,255,.04);line-height:1;pointer-events:none}
+.card-cob:hover{transform:translateY(-4px);border-color:var(--ambar);background:rgba(255,255,255,.08)}
+.card-cob-ico{width:42px;height:42px;border-radius:9px;background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.25);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:1.3rem}
+.card-cob h3{font-size:.9rem;font-weight:600;color:rgba(255,255,255,.8);margin-bottom:7px;line-height:1.3}
+.card-cob .monto{font-family:var(--serif);font-size:1.7rem;font-weight:800;color:var(--ambar);line-height:1.1;margin-bottom:4px}
+.card-cob .monto-soles{font-size:.82rem;color:rgba(255,255,255,.4);font-weight:500}
+.card-cob .desc{font-size:.8rem;color:rgba(255,255,255,.45);line-height:1.45}
+.uit-wrap{margin-top:24px;text-align:center}
+.uit-chip{display:inline-block;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:7px;padding:11px 22px;font-size:.82rem;color:rgba(255,255,255,.6)}
+.uit-chip strong{color:var(--ambar)}
+.uit-chip a{color:rgba(255,255,255,.6);text-decoration:none;font-weight:600;border-bottom:1px dotted rgba(255,255,255,.3)}
+
+/* ─── TIMELINE — fondo blanco con acento rojo ─── */
+#como-funciona{background:#fff}
+.timeline{max-width:720px;margin:0 auto;position:relative;padding-left:60px}
+.timeline::before{content:'';position:absolute;left:24px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--rojo) 0%,rgba(232,50,10,.12) 100%)}
+.paso{position:relative;margin-bottom:40px}
+.paso:last-child{margin-bottom:0}
+.paso-num{position:absolute;left:-60px;top:0;width:48px;height:48px;background:var(--rojo);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.1rem;font-weight:800;color:#fff;z-index:1;box-shadow:0 4px 14px rgba(232,50,10,.35)}
+.paso-body{background:var(--gris3);border:1px solid var(--borde);border-radius:12px;padding:20px 22px;position:relative}
+.paso-body::before{content:'';position:absolute;left:-10px;top:14px;border:5px solid transparent;border-right-color:var(--gris3)}
+.paso-body h3{font-family:var(--serif);font-size:.97rem;font-weight:800;color:var(--azul);margin-bottom:5px}
+.paso-body p{font-size:.87rem;color:var(--gris2);line-height:1.6}
+.paso-body a{color:var(--rojo);font-weight:600;text-decoration:none}
+.paso-body .p-deco{position:absolute;right:12px;bottom:2px;font-family:var(--serif);font-size:4rem;font-weight:800;color:rgba(15,31,75,.05);line-height:1;pointer-events:none}
+/* llamadas urgentes */
+.paso-urgente{display:inline-flex;align-items:center;gap:6px;background:rgba(232,50,10,.08);border:1px solid rgba(232,50,10,.2);border-radius:5px;padding:4px 10px;font-size:.78rem;font-weight:700;color:var(--rojo);margin-top:8px}
+
+/* ─── VIGENCIA — fondo gris suave ─── */
+#vigencia{background:var(--gris3)}
+.vigencia-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.info-card{background:#fff;border:1px solid var(--borde);border-radius:14px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.info-card h3{font-family:var(--serif);font-size:1.1rem;font-weight:800;color:var(--azul);margin-bottom:18px}
+.dato{display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid var(--borde)}
+.dato:last-of-type{border-bottom:none}
+.dato-ico{width:36px;height:36px;border-radius:8px;background:var(--azul3);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;margin-top:1px}
+.dato p{font-size:.88rem;color:var(--gris2);line-height:1.55}
+.dato strong{color:var(--azul)}
+.dato a{color:var(--rojo);font-weight:600;text-decoration:none}
+.verificar-btn{display:inline-flex;align-items:center;gap:7px;background:var(--azul);color:#fff;font-size:.84rem;font-weight:700;padding:11px 18px;border-radius:7px;text-decoration:none;margin-top:16px;transition:background .15s,transform .15s}
+.verificar-btn:hover{background:var(--rojo);transform:translateY(-1px)}
+.v-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.v-card{background:#fff;border:1px solid var(--borde);border-radius:10px;padding:14px 8px;text-align:center;transition:border-color .15s,box-shadow .15s,transform .15s}
+.v-card:hover{border-color:var(--ambar);box-shadow:0 4px 14px rgba(245,158,11,.15);transform:translateY(-2px)}
+.v-card span{font-size:1.6rem;display:block;margin-bottom:5px}
+.v-card p{font-size:.76rem;font-weight:600;color:var(--azul)}
+
+/* ─── FAQ ─── */
+#faq{background:#fff}
+.faq-wrap{max-width:760px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--borde)}
+.faq-btn{width:100%;background:none;border:none;text-align:left;padding:20px 4px;display:flex;justify-content:space-between;align-items:center;gap:16px;font-family:var(--sans);font-size:.94rem;font-weight:600;color:var(--azul);transition:color .15s}
+.faq-btn:hover,.faq-btn[aria-expanded=true]{color:var(--rojo)}
+.faq-ico{width:26px;height:26px;border-radius:6px;background:var(--gris3);border:1px solid var(--borde);display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--gris2);flex-shrink:0;transition:transform .25s,background .15s,color .15s,border-color .15s}
+.faq-btn[aria-expanded=true] .faq-ico{transform:rotate(45deg);background:var(--rojo);color:#fff;border-color:var(--rojo)}
+.faq-body{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1)}
+.faq-inner{padding:0 4px 18px;font-size:.89rem;color:var(--gris2);line-height:1.75}
+.faq-inner a{color:var(--rojo);font-weight:600;text-decoration:none}
+.faq-inner strong{color:var(--azul)}
+
+/* ─── ASEGURADORAS — fondo azul ─── */
+#aseguradoras{background:var(--azul)}
+#aseguradoras .sec-kicker{color:var(--ambar)}
+#aseguradoras .sec-h2{color:#fff}
+#aseguradoras .sec-sub{color:rgba(255,255,255,.55)}
+#aseguradoras .sec-sub a{color:var(--ambar)}
+.aseg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:20px}
+.aseg-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:18px 12px;text-align:center;font-weight:600;font-size:.88rem;color:rgba(255,255,255,.75);transition:border-color .15s,background .15s}
+.aseg-card:hover{border-color:var(--ambar);background:rgba(245,158,11,.08);color:#fff}
+.aseg-nota{max-width:580px;margin:0 auto;text-align:center;font-size:.8rem;color:rgba(255,255,255,.4);background:rgba(0,0,0,.2);border:1px dashed rgba(255,255,255,.12);border-radius:7px;padding:11px 20px}
+
+/* ─── COMPARATIVA ─── */
+#comparativa{background:var(--gris3)}
+.tabla-wrap{overflow-x:auto;background:#fff;border-radius:14px;border:1px solid var(--borde);box-shadow:0 2px 16px rgba(0,0,0,.05)}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+thead th{font-family:var(--serif);font-size:.9rem;font-weight:800;padding:16px 18px;text-align:left}
+thead th:first-child{color:var(--gris2);width:32%;background:#fff}
+thead th:nth-child(2){color:var(--rojo);background:#FFF5F2;border-bottom:3px solid var(--rojo)}
+thead th:nth-child(3){color:var(--azul2);background:var(--azul3);border-bottom:3px solid var(--azul2)}
+tbody tr{border-bottom:1px solid var(--borde);transition:background .12s}
+tbody tr:hover{background:#f9f9fd}
+td{padding:12px 18px;color:var(--gris2);vertical-align:middle}
+td:first-child{font-weight:600;color:var(--azul)}
+td:nth-child(2){background:rgba(232,50,10,.02)}
+td:nth-child(3){background:rgba(15,31,75,.02)}
+.si{color:#1D8A44;font-weight:700}
+.no{color:var(--rojo);font-weight:700}
+.tabla-nota{font-size:.75rem;color:var(--gris2);margin-top:12px;padding:0 4px;font-style:italic}
+
+/* ─── CTA BAND ámbar premium ─── */
+.cta-band{background:var(--ambar);padding:64px 24px;text-align:center;position:relative;overflow:hidden}
+.cta-band::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent,transparent 20px,rgba(0,0,0,.03) 20px,rgba(0,0,0,.03) 21px);pointer-events:none}
+.cta-band h2{font-family:var(--serif);font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:800;color:var(--azul);margin-bottom:10px;position:relative;letter-spacing:-.02em}
+.cta-band p{color:rgba(15,31,75,.7);font-size:.97rem;margin-bottom:28px;position:relative;max-width:440px;margin-left:auto;margin-right:auto}
+.cta-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;position:relative}
+.cta-link{display:inline-flex;align-items:center;gap:6px;padding:12px 20px;border-radius:7px;font-size:.85rem;font-weight:700;text-decoration:none;transition:all .15s}
+.cl-azul{background:var(--azul);color:#fff}
+.cl-azul:hover{background:var(--azul2);transform:translateY(-1px)}
+.cl-rojo{background:var(--rojo);color:#fff}
+.cl-rojo:hover{background:var(--rojo2);transform:translateY(-1px)}
+.cl-outline{background:transparent;color:var(--azul);border:2px solid var(--azul)}
+.cl-outline:hover{background:var(--azul);color:#fff;transform:translateY(-1px)}
+
+/* ─── FOOTER azul noche ─── */
+footer{background:#080E22;color:rgba(255,255,255,.55);padding:52px 24px 28px}
+.footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.07)}
+.footer-logo{display:flex;align-items:center;gap:9px;margin-bottom:14px;text-decoration:none}
+.footer-logo-txt{font-family:var(--serif);font-size:1.05rem;font-weight:800;color:#fff}
+.footer-logo-txt span{color:var(--ambar)}
+.footer-desc{font-size:.82rem;line-height:1.7;max-width:300px}
+.footer-col h4{font-family:var(--serif);font-size:.88rem;font-weight:800;color:#fff;margin-bottom:13px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:8px}
+.footer-col a{font-size:.82rem;color:rgba(255,255,255,.45);text-decoration:none;transition:color .15s}
+.footer-col a:hover{color:var(--ambar)}
+.footer-bottom{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.76rem}
+.footer-chip{background:rgba(232,50,10,.15);color:#FF8066;border:1px solid rgba(232,50,10,.3);font-size:.7rem;font-weight:700;padding:4px 10px;border-radius:20px}
+
+/* ─── ANIMACIONES ─── */
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+.entrada{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.entrada.vis{opacity:1;transform:translateY(0)}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:880px){
+  .hero-wrap{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .que-grid,.vigencia-grid,.footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  nav{display:none}
+  nav.open{display:flex;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:var(--azul);padding:14px 22px;border-bottom:1px solid rgba(255,255,255,.1);box-shadow:0 8px 24px rgba(0,0,0,.3);z-index:300}
+  .menu-btn{display:flex}
+  .hdr{position:relative}
+  .hdr-badge{display:none}
+  .hero-btns .btn-outline-w{display:none}
+  .hero-stats{gap:18px}
+  .cob-grid{grid-template-columns:1fr 1fr}
+  .v-grid{grid-template-columns:repeat(2,1fr)}
+  .trust-in{gap:14px}
+}
+@media(max-width:460px){
+  .cob-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar" role="alert">
+  ⚠️ El SOAT es <strong>OBLIGATORIO</strong> en Perú · Multa por no tenerlo:
+  <span>S/ 642</span>
+  · Este sitio es solo informativo
+</div>
+
+<!-- HEADER -->
+<header id="main-header">
+  <div class="hdr">
+    <a href="#inicio" class="logo" aria-label="portalsoatinfo inicio">
+      <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M18 2L33 8V18C33 27 26 33 18 35C10 33 3 27 3 18V8Z" fill="#E8320A"/>
+        <rect x="14" y="2.5" width="8" height="31" fill="white" opacity="0.15"/>
+        <circle cx="18" cy="16.5" r="5" fill="white" opacity="0.9"/>
+        <circle cx="18" cy="16.5" r="2.5" fill="#E8320A"/>
+        <line x1="18" y1="9" x2="18" y2="7" stroke="white" stroke-width="1.6"/>
+        <line x1="18" y1="24" x2="18" y2="26" stroke="white" stroke-width="1.6"/>
+        <line x1="11" y1="16.5" x2="9" y2="16.5" stroke="white" stroke-width="1.6"/>
+        <line x1="25" y1="16.5" x2="27" y2="16.5" stroke="white" stroke-width="1.6"/>
+        <line x1="13" y1="11.5" x2="11.5" y2="10" stroke="white" stroke-width="1.3"/>
+        <line x1="23" y1="21.5" x2="24.5" y2="23" stroke="white" stroke-width="1.3"/>
+        <line x1="23" y1="11.5" x2="24.5" y2="10" stroke="white" stroke-width="1.3"/>
+        <line x1="13" y1="21.5" x2="11.5" y2="23" stroke="white" stroke-width="1.3"/>
+      </svg>
+      <span class="logo-txt">portal<span>soat</span>info</span>
+    </a>
+    <nav id="nav-main" role="navigation" aria-label="Navegación principal">
+      <a href="#que-es">¿Qué es?</a>
+      <a href="#coberturas">Coberturas</a>
+      <a href="#como-funciona">¿Cómo funciona?</a>
+      <a href="#faq">FAQ</a>
+      <a href="#comparativa">SOAT vs AFOCAT</a>
+      <a href="terminos.html">Términos</a>
+    </nav>
+    <span class="hdr-badge">Solo informativo · No vendemos SOAT</span>
+    <button class="menu-btn" id="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-main">☰</button>
+  </div>
+</header>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section id="inicio" class="hero" aria-labelledby="hero-h1">
+  <div class="hero-blob1" aria-hidden="true"></div>
+  <div class="hero-blob2" aria-hidden="true"></div>
+  <div class="hero-diag" aria-hidden="true"></div>
+  <div class="hero-wrap">
+    <div class="hero-left">
+      <div class="hero-pill">
+        <span class="hero-pill-dot"></span>
+        🇵🇪 Portal informativo independiente · Perú 2025
+      </div>
+      <h1 id="hero-h1">
+        Tu guía completa del<br>
+        <span class="h1-ambar">SOAT</span>
+        <span class="h1-rojo"> en Perú</span>
+      </h1>
+      <p class="hero-sub">Coberturas, vigencia, cómo reclamar y todo lo que debes saber. Sin intermediarios. Sin venta de seguros. Solo información clara y confiable.</p>
+      <div class="hero-stats">
+        <div class="h-stat">
+          <span class="h-stat-num">5 UIT</span>
+          <span class="h-stat-txt">Gastos médicos</span>
+        </div>
+        <div class="h-stat">
+          <span class="h-stat-num">4 UIT</span>
+          <span class="h-stat-txt">Por muerte/invalidez</span>
+        </div>
+        <div class="h-stat">
+          <span class="h-stat-num">S/0</span>
+          <span class="h-stat-txt">Sin deducible</span>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="#coberturas" class="btn-ambar">
+          Ver coberturas →
+        </a>
+        <a href="#como-funciona" class="btn-outline-w">¿Cómo funciona?</a>
+      </div>
+    </div>
+    <div class="hero-right" aria-hidden="true">
+      <div class="hero-card">
+        <div class="hcard-head">
+          <svg width="14" height="14" viewBox="0 0 36 36" fill="none"><path d="M18 2L33 8V18C33 27 26 33 18 35C10 33 3 27 3 18V8Z" fill="#FF8066"/></svg>
+          <p>Coberturas SOAT — Resumen</p>
+        </div>
+        <div class="hcard-body">
+          <div class="cob-row">
+            <div class="cob-left"><span class="cob-ico">💀</span><span class="cob-nombre">Muerte</span></div>
+            <span class="cob-monto">4 UIT · S/21,400</span>
+          </div>
+          <div class="cob-row">
+            <div class="cob-left"><span class="cob-ico">🦽</span><span class="cob-nombre">Invalidez permanente</span></div>
+            <span class="cob-monto">4 UIT · S/21,400</span>
+          </div>
+          <div class="cob-row">
+            <div class="cob-left"><span class="cob-ico">🩹</span><span class="cob-nombre">Invalidez temporal</span></div>
+            <span class="cob-monto">1 UIT · S/5,350</span>
+          </div>
+          <div class="cob-row">
+            <div class="cob-left"><span class="cob-ico">🏥</span><span class="cob-nombre">Gastos médicos</span></div>
+            <span class="cob-monto">5 UIT · S/26,750</span>
+          </div>
+          <div class="cob-row">
+            <div class="cob-left"><span class="cob-ico">⚱️</span><span class="cob-nombre">Gastos de sepelio</span></div>
+            <span class="cob-monto">1 UIT · S/5,350</span>
+          </div>
+        </div>
+        <div class="hcard-foot">UIT 2025 = S/ 5,350 · Fuente: MEF / SBS Perú · Sin deducible</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust">
+  <div class="trust-in">
+    <span class="t-item"><span class="t-ico">✔</span> Basado en SBS y MTC</span>
+    <span class="t-item"><span class="t-ico">✔</span> Sin afiliación a aseguradoras</span>
+    <span class="t-item"><span class="t-ico">✔</span> No vendemos seguros</span>
+    <span class="t-item"><span class="t-ico">✔</span> Actualizado 2025</span>
+    <span class="t-item"><span class="t-ico">✔</span> Apto para Google Ads</span>
+  </div>
+</div>
+
+<!-- ═══ QUÉ ES ═══ -->
+<section id="que-es" aria-labelledby="h-que-es">
+  <div class="container">
+    <div class="sec-head entrada">
+      <span class="sec-kicker">Definición y base legal</span>
+      <h2 class="sec-h2" id="h-que-es">¿Qué es el SOAT?</h2>
+      <p class="sec-sub">El seguro obligatorio que protege a conductor, pasajeros y peatones en todo accidente de tránsito.</p>
+    </div>
+    <div class="que-grid">
+      <div class="entrada" data-delay="80">
+        <h3>Definición y marco legal</h3>
+        <p>El <strong>SOAT</strong> (Seguro Obligatorio de Accidentes de Tránsito) es obligatorio para todos los vehículos motorizados que circulen en el Perú. Garantiza atención médica inmediata a las víctimas sin importar quién tenga la culpa del accidente.</p>
+        <div class="ley-tag">📋 Base legal: Ley N° 27181 + D.S. N° 024-2002-MTC</div>
+        <h3>¿Quiénes están obligados?</h3>
+        <ul class="lista-v" style="margin-top:8px">
+          <li><span class="v-dot">✓</span>Propietarios de autos, camionetas y SUV particulares</li>
+          <li><span class="v-dot">✓</span>Propietarios de motocicletas y mototaxis</li>
+          <li><span class="v-dot">✓</span>Empresas de transporte público y privado</li>
+          <li><span class="v-dot">✓</span>Propietarios de taxis, buses, camiones</li>
+          <li><span class="v-dot">✓</span>Todo vehículo inscrito en Registros Públicos del Perú</li>
+        </ul>
+      </div>
+      <div class="entrada" data-delay="180">
+        <div class="alerta">
+          <h4>⚠️ Consecuencias de circular sin SOAT</h4>
+          <ul class="alerta-lista">
+            <li>Papeleta de tránsito por infracción grave (código E.2)</li>
+            <li>Multa de <strong style="color:var(--ambar)">S/ 642</strong> (2 UIT referencial)</li>
+            <li>Retención e inmovilización del vehículo</li>
+            <li>Internamiento en depósito autorizado</li>
+            <li>Responsabilidad civil personal ante víctimas del accidente</li>
+            <li>Imposibilidad de circular legalmente en el Perú</li>
+          </ul>
+          <p class="alerta-nota">* Sanciones sujetas al Reglamento Nacional de Tránsito vigente del MTC. Verifique en mtc.gob.pe</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"><svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg" height="60"><polygon points="0,30 1200,0 1200,60 0,60" fill="#0F1F4B"/></svg></div>
+
+<!-- ═══ COBERTURAS ═══ -->
+<section id="coberturas" aria-labelledby="h-cob">
+  <div class="container">
+    <div class="sec-head center entrada">
+      <span class="sec-kicker">Beneficios y montos</span>
+      <h2 class="sec-h2" id="h-cob">Coberturas del SOAT</h2>
+      <p class="sec-sub">Cubre daños corporales a todas las víctimas. Sin deducible. Desde el primer sol de gasto.</p>
+    </div>
+    <div class="cob-grid">
+      <div class="card-cob entrada" data-delay="0" data-n="1">
+        <div class="card-cob-ico">💀</div>
+        <h3>Muerte</h3>
+        <div class="monto">4 UIT</div>
+        <div class="monto-soles">S/ 21,400 referencial 2025</div>
+        <p class="desc">Indemnización por fallecimiento de cualquier víctima, incluido el conductor.</p>
+      </div>
+      <div class="card-cob entrada" data-delay="70" data-n="2">
+        <div class="card-cob-ico">🦽</div>
+        <h3>Invalidez permanente</h3>
+        <div class="monto">4 UIT</div>
+        <div class="monto-soles">S/ 21,400 referencial 2025</div>
+        <p class="desc">Incapacidad física permanente total o parcial derivada del accidente.</p>
+      </div>
+      <div class="card-cob entrada" data-delay="140" data-n="3">
+        <div class="card-cob-ico">🩹</div>
+        <h3>Invalidez temporal</h3>
+        <div class="monto">1 UIT</div>
+        <div class="monto-soles">S/ 5,350 referencial 2025</div>
+        <p class="desc">Subsidio diario por incapacidad temporal para trabajar.</p>
+      </div>
+      <div class="card-cob entrada" data-delay="210" data-n="4">
+        <div class="card-cob-ico">🏥</div>
+        <h3>Gastos médicos</h3>
+        <div class="monto">5 UIT</div>
+        <div class="monto-soles">S/ 26,750 referencial 2025</div>
+        <p class="desc">Hospitalización, cirugías, medicamentos y rehabilitación.</p>
+      </div>
+      <div class="card-cob entrada" data-delay="280" data-n="5">
+        <div class="card-cob-ico">⚱️</div>
+        <h3>Gastos de sepelio</h3>
+        <div class="monto">1 UIT</div>
+        <div class="monto-soles">S/ 5,350 referencial 2025</div>
+        <p class="desc">Reembolso de gastos funerarios en caso de fallecimiento.</p>
+      </div>
+    </div>
+    <div class="uit-wrap entrada" data-delay="350">
+      <span class="uit-chip">
+        📌 <strong>UIT 2025 = S/ 5,350</strong> · Fuente: <a href="https://www.mef.gob.pe" target="_blank" rel="nofollow noopener">MEF</a> y <a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener">SBS Perú</a> · Montos referenciales, verifique la UIT vigente
+      </span>
+    </div>
+  </div>
+</section>
+
+<div class="sep"><svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg" height="60"><polygon points="0,0 1200,30 1200,60 0,60" fill="#fff"/></svg></div>
+
+<!-- ═══ CÓMO FUNCIONA ═══ -->
+<section id="como-funciona" aria-labelledby="h-como">
+  <div class="container">
+    <div class="sec-head center entrada">
+      <span class="sec-kicker">Paso a paso</span>
+      <h2 class="sec-h2" id="h-como">¿Cómo funciona en caso de accidente?</h2>
+      <p class="sec-sub">Activa tu cobertura correctamente siguiendo estos 5 pasos.</p>
+    </div>
+    <div class="timeline">
+      <div class="paso entrada" data-delay="0">
+        <div class="paso-num">1</div>
+        <div class="paso-body">
+          <h3>Llamar a emergencias de inmediato</h3>
+          <p>Llama al <strong>105 (PNP)</strong>, <strong>116 (Bomberos)</strong> o <strong>117 (SAMU)</strong>. La atención médica es inmediata y cubierta desde el primer momento, sin importar quién causó el accidente.</p>
+          <div class="paso-urgente">📞 105 · 116 · 117 — Memoriza estos números</div>
+          <span class="p-deco" aria-hidden="true">1</span>
+        </div>
+      </div>
+      <div class="paso entrada" data-delay="90">
+        <div class="paso-num">2</div>
+        <div class="paso-body">
+          <h3>Solicitar el Certificado de Accidente</h3>
+          <p>La PNP debe emitir el <strong>Atestado Policial o Certificado de Accidente de Tránsito</strong>. Es el documento clave para activar la cobertura. Exija que contenga todos los datos del accidente y del vehículo involucrado.</p>
+          <span class="p-deco" aria-hidden="true">2</span>
+        </div>
+      </div>
+      <div class="paso entrada" data-delay="180">
+        <div class="paso-num">3</div>
+        <div class="paso-body">
+          <h3>Identificar la aseguradora</h3>
+          <p>Verifique qué aseguradora emitió el SOAT del vehículo involucrado. Si el vehículo no tiene SOAT, el <strong>FONAREV</strong> cubre a las víctimas. Consulte en <a href="https://www.apeseg.org.pe" target="_blank" rel="nofollow noopener">APESEG</a>.</p>
+          <span class="p-deco" aria-hidden="true">3</span>
+        </div>
+      </div>
+      <div class="paso entrada" data-delay="270">
+        <div class="paso-num">4</div>
+        <div class="paso-body">
+          <h3>Presentar los documentos requeridos</h3>
+          <p>Necesitará: <strong>Atestado policial · DNI · Facturas médicas originales · Informes médicos</strong>. Para fallecimiento: Acta de Defunción y documento de vínculo familiar con el beneficiario.</p>
+          <span class="p-deco" aria-hidden="true">4</span>
+        </div>
+      </div>
+      <div class="paso entrada" data-delay="360">
+        <div class="paso-num">5</div>
+        <div class="paso-body">
+          <h3>Gestión del reclamo y cobro</h3>
+          <p>La aseguradora evalúa y paga. Gastos médicos se pagan al centro de salud o se reembolsan. Indemnizaciones por muerte o invalidez se abonan a los beneficiarios. Plazos fijados por la <a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener">SBS</a>.</p>
+          <span class="p-deco" aria-hidden="true">5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"><svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg" height="60"><polygon points="0,30 1200,0 1200,60 0,60" fill="#F7F7FB"/></svg></div>
+
+<!-- ═══ VIGENCIA ═══ -->
+<section id="vigencia" aria-labelledby="h-vigencia">
+  <div class="container">
+    <div class="sec-head entrada">
+      <span class="sec-kicker">Plazo y vehículos</span>
+      <h2 class="sec-h2" id="h-vigencia">Vigencia y vehículos obligados</h2>
+    </div>
+    <div class="vigencia-grid">
+      <div class="info-card entrada" data-delay="0">
+        <h3>Datos de vigencia</h3>
+        <div class="dato">
+          <span class="dato-ico">📅</span>
+          <p><strong>Vigencia:</strong> 1 año calendario desde la fecha de emisión. Renovación obligatoria cada año.</p>
+        </div>
+        <div class="dato">
+          <span class="dato-ico">🌎</span>
+          <p><strong>Cobertura territorial:</strong> Válido en todo el territorio nacional. No válido en el extranjero.</p>
+        </div>
+        <div class="dato">
+          <span class="dato-ico">💰</span>
+          <p><strong>Costo:</strong> Varía según tipo y uso del vehículo. Consulte precios en aseguradoras autorizadas por la <a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener">SBS</a>.</p>
+        </div>
+        <div class="dato">
+          <span class="dato-ico">🔍</span>
+          <p><strong>Verificar SOAT vigente:</strong> Ingrese la placa en APESEG para consultar el estado del SOAT.</p>
+        </div>
+        <a href="https://www.apeseg.org.pe" target="_blank" rel="nofollow noopener" class="verificar-btn">Consultar SOAT en APESEG →</a>
+      </div>
+      <div class="entrada" data-delay="150">
+        <h3 style="font-family:var(--serif);font-size:1.1rem;font-weight:800;color:var(--azul);margin-bottom:18px">Vehículos obligados a tener SOAT</h3>
+        <div class="v-grid">
+          <div class="v-card"><span aria-hidden="true">🚗</span><p>Auto particular</p></div>
+          <div class="v-card"><span aria-hidden="true">🏍️</span><p>Motocicleta</p></div>
+          <div class="v-card"><span aria-hidden="true">🚕</span><p>Taxi</p></div>
+          <div class="v-card"><span aria-hidden="true">🚌</span><p>Bus / Minibús</p></div>
+          <div class="v-card"><span aria-hidden="true">🚚</span><p>Camión de carga</p></div>
+          <div class="v-card"><span aria-hidden="true">🛺</span><p>Mototaxi</p></div>
+          <div class="v-card"><span aria-hidden="true">🚐</span><p>Combi / Cúster</p></div>
+          <div class="v-card"><span aria-hidden="true">🚜</span><p>Vehículo agrícola</p></div>
+          <div class="v-card"><span aria-hidden="true">🚑</span><p>Ambulancia priv.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"><svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg" height="60"><polygon points="0,0 1200,30 1200,60 0,60" fill="#fff"/></svg></div>
+
+<!-- ═══ FAQ ═══ -->
+<section id="faq" aria-labelledby="h-faq">
+  <div class="container">
+    <div class="sec-head center entrada">
+      <span class="sec-kicker">Dudas frecuentes</span>
+      <h2 class="sec-h2" id="h-faq">Preguntas frecuentes sobre el SOAT</h2>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-item entrada">
+        <button class="faq-btn" aria-expanded="false" aria-controls="fr1">¿El SOAT cubre al conductor del vehículo? <span class="faq-ico" aria-hidden="true">+</span></button>
+        <div class="faq-body" id="fr1" role="region"><div class="faq-inner">Sí. El SOAT cubre a <strong>todas las personas involucradas</strong>: conductor, pasajeros y peatones. La cobertura es objetiva e independiente de quién tenga la culpa del accidente.</div></div>
+      </div>
+      <div class="faq-item entrada">
+        <button class="faq-btn" aria-expanded="false" aria-controls="fr2">¿Qué pasa si el vehículo que me choca no tiene SOAT? <span class="faq-ico" aria-hidden="true">+</span></button>
+        <div class="faq-body" id="fr2" role="region"><div class="faq-inner">Entra el <strong>FONAREV</strong> (Fondo Nacional para Accidentes de Tránsito), administrado por el MTC. Cubre a víctimas de vehículos sin SOAT o que se dieron a la fuga. El conductor infractor también tiene responsabilidad civil personal. Más info: <a href="https://www.mtc.gob.pe" target="_blank" rel="nofollow noopener">mtc.gob.pe</a>.</div></div>
+      </div>
+      <div class="faq-item entrada">
+        <button class="faq-btn" aria-expanded="false" aria-controls="fr3">¿El SOAT cubre daños materiales al vehículo? <span class="faq-ico" aria-hidden="true">+</span></button>
+        <div class="faq-body" id="fr3" role="region"><div class="faq-inner"><strong>No.</strong> El SOAT cubre exclusivamente <strong>daños corporales</strong>: lesiones físicas, invalidez y muerte. Los daños materiales a vehículos o propiedades no están cubiertos. Para eso existe el seguro vehicular privado, que es opcional.</div></div>
+      </div>
+      <div class="faq-item entrada">
+        <button class="faq-btn" aria-expanded="false" aria-controls="fr4">¿El SOAT es válido en todo el Perú? <span class="faq-ico" aria-hidden="true">+</span></button>
+        <div class="faq-body" id="fr4" role="region"><div class="faq-inner">Sí. Tiene cobertura en <strong>todo el territorio nacional peruano</strong>, sin importar la región o departamento. No es válido en el extranjero; para viajes internacionales deberá contratar un seguro adicional.</div></div>
+      </div>
+      <div class="faq-item entrada">
+        <button class="faq-btn" aria-expanded="false" aria-controls="fr5">¿Qué documentos necesito para reclamar el SOAT? <span class="faq-ico" aria-hidden="true">+</span></button>
+        <div class="faq-body" id="fr5" role="region"><div class="faq-inner"><strong>(1)</strong> Atestado Policial de la PNP; <strong>(2)</strong> DNI del solicitante; <strong>(3)</strong> Facturas de gastos médicos originales; <strong>(4)</strong> Informes médicos y epicrisis; <strong>(5)</strong> Para fallecimiento: Acta de Defunción y documento de vínculo familiar. Los requisitos pueden variar por aseguradora.</div></div>
+      </div>
+      <div class="faq-item entrada">
+        <button class="faq-btn" aria-expanded="false" aria-controls="fr6">¿Cuánto cuesta el SOAT en Perú? <span class="faq-ico" aria-hidden="true">+</span></button>
+        <div class="faq-body" id="fr6" role="region"><div class="faq-inner">El precio varía según el <strong>tipo y uso del vehículo</strong>. Para autos particulares los precios referenciales parten desde S/ 34 aproximadamente según aseguradoras al 2025. Las tarifas son reguladas por la SBS. <strong>Este portal no vende seguros.</strong> Para precios exactos: consulte directamente con las aseguradoras autorizadas en <a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener">sbs.gob.pe</a>.</div></div>
+      </div>
+      <div class="faq-item entrada">
+        <button class="faq-btn" aria-expanded="false" aria-controls="fr7">¿Dónde puedo comprar el SOAT? <span class="faq-ico" aria-hidden="true">+</span></button>
+        <div class="faq-body" id="fr7" role="region"><div class="faq-inner">Solo con <strong>aseguradoras autorizadas por la SBS</strong>: Rímac, Mapfre Perú, La Positiva, Pacífico, Interseguro, entre otras. Puede contratarlo en sus oficinas, agentes autorizados, plataformas digitales o apps. <strong>Este portal no vende SOAT ni tiene relación con ninguna aseguradora.</strong> Lista oficial en <a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener">sbs.gob.pe</a>.</div></div>
+      </div>
+      <div class="faq-item entrada">
+        <button class="faq-btn" aria-expanded="false" aria-controls="fr8">¿El SOAT es lo mismo que el AFOCAT? <span class="faq-ico" aria-hidden="true">+</span></button>
+        <div class="faq-body" id="fr8" role="region"><div class="faq-inner">No. El <strong>SOAT</strong> es emitido por aseguradoras privadas reguladas por la SBS, obligatorio para la mayoría de vehículos. El <strong>AFOCAT</strong> es una alternativa solo para ciertos vehículos de transporte público regional/urbano, regulada por el MTC. Coberturas similares pero no idénticas. Vea la tabla comparativa.</div></div>
+      </div>
+      <div class="faq-item entrada">
+        <button class="faq-btn" aria-expanded="false" aria-controls="fr9">¿Qué es el FONAREV? <span class="faq-ico" aria-hidden="true">+</span></button>
+        <div class="faq-body" id="fr9" role="region"><div class="faq-inner">El <strong>FONAREV</strong> es un fondo del MTC que cubre a víctimas de vehículos que se dieron a la fuga (no identificados), vehículos sin SOAT vigente, o cuando el SOAT no alcanza. Es un fondo de último recurso para que ninguna víctima quede sin atención.</div></div>
+      </div>
+      <div class="faq-item entrada">
+        <button class="faq-btn" aria-expanded="false" aria-controls="fr10">¿El SOAT tiene deducible? <span class="faq-ico" aria-hidden="true">+</span></button>
+        <div class="faq-body" id="fr10" role="region"><div class="faq-inner"><strong>No.</strong> El SOAT no tiene deducible. La cobertura se activa desde el primer sol de gasto médico o indemnización, sin ningún pago previo del beneficiario. Esto lo diferencia del seguro vehicular privado que sí contempla deducibles.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep"><svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg" height="60"><polygon points="0,30 1200,0 1200,60 0,60" fill="#0F1F4B"/></svg></div>
+
+<!-- ═══ ASEGURADORAS ═══ -->
+<section id="aseguradoras" aria-labelledby="h-aseg">
+  <div class="container">
+    <div class="sec-head center entrada">
+      <span class="sec-kicker">Solo informativo</span>
+      <h2 class="sec-h2" id="h-aseg">Aseguradoras autorizadas por la SBS</h2>
+      <p class="sec-sub">Lista referencial. Consulte la lista oficial en <a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener">sbs.gob.pe</a>.</p>
+    </div>
+    <div class="aseg-grid">
+      <div class="aseg-card entrada" data-delay="0">🏛️ Rímac Seguros</div>
+      <div class="aseg-card entrada" data-delay="50">🏛️ Mapfre Perú</div>
+      <div class="aseg-card entrada" data-delay="100">🏛️ La Positiva</div>
+      <div class="aseg-card entrada" data-delay="150">🏛️ Pacífico Seguros</div>
+      <div class="aseg-card entrada" data-delay="200">🏛️ Interseguro</div>
+      <div class="aseg-card entrada" data-delay="250">🏛️ Otras autorizadas SBS</div>
+    </div>
+    <p class="aseg-nota entrada" data-delay="300">⚠️ <strong>Este portal no tiene relación comercial con ninguna aseguradora.</strong> Las menciones son estrictamente informativas. Lista oficial: <a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener" style="color:rgba(255,255,255,.5)">SBS Perú</a>.</p>
+  </div>
+</section>
+
+<div class="sep"><svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg" height="60"><polygon points="0,0 1200,30 1200,60 0,60" fill="#F7F7FB"/></svg></div>
+
+<!-- ═══ COMPARATIVA ═══ -->
+<section id="comparativa" aria-labelledby="h-comp">
+  <div class="container">
+    <div class="sec-head center entrada">
+      <span class="sec-kicker">Guía comparativa</span>
+      <h2 class="sec-h2" id="h-comp">SOAT vs AFOCAT — Diferencias clave</h2>
+    </div>
+    <div class="tabla-wrap entrada">
+      <table aria-label="Comparativa SOAT vs AFOCAT">
+        <thead>
+          <tr>
+            <th scope="col">Característica</th>
+            <th scope="col">🛡️ SOAT</th>
+            <th scope="col">📋 AFOCAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>¿Quién lo regula?</td><td>SBS (Superintendencia de Banca y Seguros)</td><td>MTC (Ministerio de Transportes)</td></tr>
+          <tr><td>¿Quién lo emite?</td><td>Aseguradoras privadas autorizadas</td><td>Asociaciones AFOCAT autorizadas</td></tr>
+          <tr><td>Vehículos que pueden usarlo</td><td>Todos los vehículos motorizados</td><td>Solo transporte público urbano/regional</td></tr>
+          <tr><td>Cobertura por muerte</td><td class="si">✔ 4 UIT</td><td class="si">✔ 4 UIT</td></tr>
+          <tr><td>Cobertura por invalidez</td><td class="si">✔ 4 UIT</td><td class="si">✔ 4 UIT</td></tr>
+          <tr><td>Gastos médicos</td><td class="si">✔ 5 UIT</td><td class="si">✔ 5 UIT</td></tr>
+          <tr><td>Cobertura geográfica</td><td>Nacional completa</td><td>Regional / Local (según autorización)</td></tr>
+          <tr><td>Disponibilidad</td><td>Amplia (oficinas, apps, agentes)</td><td>Limitada a la región autorizada</td></tr>
+          <tr><td>¿Alternativa al SOAT?</td><td class="no">✗ Es el seguro principal</td><td class="si">✔ Solo si el vehículo está autorizado</td></tr>
+        </tbody>
+      </table>
+      <p class="tabla-nota">* Montos referenciales en UIT vigente. Verifique en SBS y MTC. Actualizado: Mayo 2025.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA BAND ═══ -->
+<div class="cta-band">
+  <h2>¿Necesitas información oficial del SOAT?</h2>
+  <p>Consulta directamente en las fuentes gubernamentales autorizadas del Perú.</p>
+  <div class="cta-links">
+    <a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener" class="cta-link cl-azul">🏛️ SBS Perú</a>
+    <a href="https://www.mtc.gob.pe" target="_blank" rel="nofollow noopener" class="cta-link cl-rojo">🚦 MTC Perú</a>
+    <a href="https://www.apeseg.org.pe" target="_blank" rel="nofollow noopener" class="cta-link cl-outline">🔍 Consultar SOAT en APESEG</a>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <a href="#inicio" class="footer-logo" aria-label="portalsoatinfo inicio">
+        <svg width="28" height="28" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <path d="M18 2L33 8V18C33 27 26 33 18 35C10 33 3 27 3 18V8Z" fill="#E8320A"/>
+          <rect x="14" y="2.5" width="8" height="31" fill="white" opacity="0.15"/>
+          <circle cx="18" cy="16.5" r="4.5" fill="white" opacity="0.9"/>
+          <circle cx="18" cy="16.5" r="2.2" fill="#E8320A"/>
+        </svg>
+        <span class="footer-logo-txt">portal<span>soat</span>info</span>
+      </a>
+      <p class="footer-desc">Portal informativo independiente sobre el SOAT en Perú. No somos aseguradora, corredor ni intermediario. La información tiene fines exclusivamente educativos. Para contratar su SOAT, acuda a las aseguradoras autorizadas por la SBS.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Información</h4>
+      <ul>
+        <li><a href="#que-es">¿Qué es el SOAT?</a></li>
+        <li><a href="#coberturas">Coberturas</a></li>
+        <li><a href="#como-funciona">¿Cómo funciona?</a></li>
+        <li><a href="#vigencia">Vigencia</a></li>
+        <li><a href="#faq">Preguntas Frecuentes</a></li>
+        <li><a href="#comparativa">SOAT vs AFOCAT</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal y fuentes</h4>
+      <ul>
+        <li><a href="terminos.html">Términos y Condiciones</a></li>
+        <li><a href="terminos.html#privacidad">Política de Privacidad</a></li>
+        <li><a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener">SBS Perú</a></li>
+        <li><a href="https://www.mtc.gob.pe" target="_blank" rel="nofollow noopener">MTC Perú</a></li>
+        <li><a href="https://www.apeseg.org.pe" target="_blank" rel="nofollow noopener">APESEG</a></li>
+        <li><a href="https://www.mef.gob.pe" target="_blank" rel="nofollow noopener">MEF Perú (UIT)</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="yr">2025</span> portalsoatinfo · Todos los derechos reservados · Lima, Perú</span>
+    <span class="footer-chip">⚠️ Sitio informativo — No vendemos SOAT</span>
+    <span>Actualizado: Mayo 2025</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var hdr=document.getElementById('main-header');
+  window.addEventListener('scroll',function(){hdr.classList.toggle('scrolled',window.scrollY>50);},{passive:true});
+  var btn=document.getElementById('menu-btn'),nav=document.getElementById('nav-main');
+  if(btn&&nav){
+    btn.addEventListener('click',function(){
+      var o=nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded',o?'true':'false');
+    });
+    nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');});});
+  }
+  document.querySelectorAll('.faq-btn').forEach(function(b){
+    b.addEventListener('click',function(){
+      var open=b.getAttribute('aria-expanded')==='true';
+      document.querySelectorAll('.faq-btn').forEach(function(x){
+        x.setAttribute('aria-expanded','false');
+        var bd=document.getElementById(x.getAttribute('aria-controls'));
+        if(bd)bd.style.maxHeight='0';
+      });
+      if(!open){
+        b.setAttribute('aria-expanded','true');
+        var body=document.getElementById(b.getAttribute('aria-controls'));
+        if(body)body.style.maxHeight=(body.querySelector('.faq-inner').scrollHeight+32)+'px';
+      }
+    });
+  });
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var t=document.querySelector(this.getAttribute('href'));
+      if(!t)return;
+      e.preventDefault();
+      window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-66,behavior:'smooth'});
+    });
+  });
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        var el=en.target,d=parseInt(el.dataset.delay||0);
+        setTimeout(function(){el.classList.add('vis');},d);
+        obs.unobserve(el);
+      }
+    });
+  },{threshold:.1,rootMargin:'0px 0px -32px 0px'});
+  document.querySelectorAll('.entrada').forEach(function(el){obs.observe(el);});
+})();
+</script>
+</body>
+</html>
