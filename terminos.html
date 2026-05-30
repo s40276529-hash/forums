@@ -1,216 +1,418 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Términos y Condiciones · Política de Privacidad — portalsoatinfo</title>
-  <meta name="description" content="Términos y condiciones de uso y política de privacidad de portalsoatinfo, portal informativo independiente sobre el SOAT en Perú." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://portalsoatinfo.com/terminos.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Términos y Condiciones · Política de Privacidad — portalsoatinfo</title>
+<meta name="description" content="Términos y condiciones de uso y política de privacidad de portalsoatinfo, portal informativo independiente sobre el SOAT en Perú."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://portalsoatinfo.com/terminos.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'DM Sans',system-ui,sans-serif;color:#1a1a2e;background:#fff;line-height:1.6}
+:root{
+  --r:#E8320A;--r2:#C02800;--r3:#FFF2EE;
+  --amb:#F59E0B;--amb2:#D97706;
+  --azul:#0F1F4B;--azul2:#1A3272;--azul3:#E8EDF8;
+  --gris:#3D3D56;--gris2:#6B6B84;--gris3:#F7F7FB;
+  --borde:#E4E4EF;
+  --serif:'Syne',Georgia,sans-serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+}
+ 
+/* ── TOP BAR ── */
+.topbar{background:var(--r);color:#fff;text-align:center;padding:9px 16px;font-size:.8rem;font-weight:600;letter-spacing:.03em}
+.topbar strong{background:rgba(0,0,0,.2);border-radius:3px;padding:1px 7px;margin-left:4px}
+ 
+/* ── HEADER ── */
+header{background:var(--azul);border-bottom:1px solid rgba(255,255,255,.07);position:sticky;top:0;z-index:100}
+.hdr{max-width:1140px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex-shrink:0}
+.logo svg{width:32px;height:32px;flex-shrink:0}
+.logo-txt{font-family:var(--serif);font-size:1.15rem;font-weight:800;color:#fff}
+.logo-txt span{color:var(--amb)}
+nav{display:flex;align-items:center;gap:2px}
+nav a{font-size:.8rem;font-weight:600;color:rgba(255,255,255,.65);text-decoration:none;padding:6px 10px;border-radius:5px;white-space:nowrap;transition:color .15s,background .15s}
+nav a:hover,nav a.active{color:#fff;background:rgba(255,255,255,.1)}
+.hdr-badge{font-size:.7rem;font-weight:700;padding:4px 10px;border-radius:20px;background:rgba(245,158,11,.15);color:var(--amb);border:1px solid rgba(245,158,11,.3);white-space:nowrap}
+.menu-btn{display:none;background:none;border:none;font-size:1.4rem;color:#fff;padding:4px;cursor:pointer}
+ 
+/* ── BREADCRUMB ── */
+.breadcrumb{background:var(--gris3);border-bottom:1px solid var(--borde);padding:11px 24px}
+.breadcrumb-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:8px;font-size:.8rem;color:var(--gris2)}
+.breadcrumb a{color:var(--r);text-decoration:none;font-weight:600}
+.breadcrumb a:hover{text-decoration:underline}
+.breadcrumb span{color:var(--gris2)}
+ 
+/* ── LAYOUT PRINCIPAL ── */
+.page-layout{max-width:1100px;margin:0 auto;padding:48px 24px 80px;display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start}
+ 
+/* ── SIDEBAR ── */
+.sidebar{position:sticky;top:80px}
+.sidebar-card{background:#fff;border:1px solid var(--borde);border-radius:12px;overflow:hidden}
+.sidebar-head{background:var(--azul);padding:14px 18px}
+.sidebar-head p{font-family:var(--serif);font-size:.88rem;font-weight:800;color:#fff}
+.sidebar-nav{padding:8px 0}
+.sidebar-nav a{display:flex;align-items:center;gap:8px;padding:9px 18px;font-size:.83rem;color:var(--gris);text-decoration:none;font-weight:500;transition:background .12s,color .12s;border-left:3px solid transparent}
+.sidebar-nav a:hover{background:var(--gris3);color:var(--azul);border-left-color:var(--r)}
+.sidebar-nav a.active{background:var(--r3);color:var(--r);border-left-color:var(--r);font-weight:600}
+.sidebar-nota{margin-top:14px;background:var(--r3);border:1px solid #ffd0c0;border-radius:10px;padding:14px 16px;font-size:.78rem;color:#7a2010;line-height:1.55}
+.sidebar-nota strong{display:block;margin-bottom:4px;color:var(--r2)}
+.sidebar-link{display:flex;align-items:center;gap:6px;margin-top:10px;background:var(--azul);color:#fff;font-size:.79rem;font-weight:700;padding:9px 14px;border-radius:7px;text-decoration:none;justify-content:center;transition:background .15s}
+.sidebar-link:hover{background:var(--r)}
+ 
+/* ── CONTENIDO ── */
+.terminos-content{min-width:0}
+.tc-header{margin-bottom:36px;padding-bottom:28px;border-bottom:2px solid var(--borde)}
+.tc-header .kicker{display:block;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--r);margin-bottom:8px}
+.tc-header h1{font-family:var(--serif);font-size:clamp(1.7rem,3vw,2.2rem);font-weight:800;color:var(--azul);line-height:1.12;margin-bottom:8px;letter-spacing:-.02em}
+.tc-header .fecha{font-size:.82rem;color:var(--gris2);display:flex;align-items:center;gap:6px}
+.tc-header .fecha span{background:var(--azul3);color:var(--azul2);font-weight:600;padding:2px 9px;border-radius:4px;font-size:.76rem}
+ 
+/* Claúsulas */
+.clausula{margin-bottom:36px;padding-bottom:36px;border-bottom:1px solid var(--borde)}
+.clausula:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.clausula h2{font-family:var(--serif);font-size:1.1rem;font-weight:800;color:var(--azul);margin-bottom:12px;display:flex;align-items:center;gap:10px;line-height:1.2}
+.clausula-num{width:26px;height:26px;background:var(--r);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:800;color:#fff;flex-shrink:0}
+.clausula p{font-size:.93rem;color:var(--gris2);line-height:1.75;margin-bottom:10px}
+.clausula p:last-child{margin-bottom:0}
+.clausula ul{padding-left:0;list-style:none;display:flex;flex-direction:column;gap:7px;margin-bottom:10px}
+.clausula li{font-size:.91rem;color:var(--gris2);line-height:1.6;padding-left:18px;position:relative}
+.clausula li::before{content:'→';position:absolute;left:0;color:var(--r);font-weight:700;font-size:.8rem}
+.clausula a{color:var(--r);font-weight:600;text-decoration:none}
+.clausula a:hover{text-decoration:underline}
+.clausula strong{color:var(--azul);font-weight:600}
+ 
+/* Cajas informativas */
+.info-box{background:var(--azul3);border:1px solid #c8d6f0;border-radius:10px;padding:16px 18px;margin:14px 0;font-size:.88rem;color:var(--azul2);line-height:1.6}
+.info-box strong{color:var(--azul);display:block;margin-bottom:4px}
+.warn-box{background:var(--r3);border:1px solid #ffd0c0;border-radius:10px;padding:16px 18px;margin:14px 0;font-size:.88rem;color:#7a2010;line-height:1.6}
+.warn-box strong{color:var(--r2);display:block;margin-bottom:4px}
+ 
+/* Contacto */
+.contacto-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.contacto-item{background:var(--gris3);border:1px solid var(--borde);border-radius:9px;padding:14px 16px}
+.contacto-item .c-label{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gris2);margin-bottom:5px}
+.contacto-item .c-val{font-size:.9rem;font-weight:600;color:var(--azul)}
+ 
+/* ── FOOTER ── */
+footer{background:#080E22;color:rgba(255,255,255,.5);padding:40px 24px 24px}
+.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-logo{display:flex;align-items:center;gap:8px;text-decoration:none}
+.footer-logo svg{width:24px;height:24px;flex-shrink:0}
+.footer-logo-txt{font-family:var(--serif);font-size:.95rem;font-weight:800;color:#fff}
+.footer-logo-txt span{color:var(--amb)}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap}
+.footer-links a{font-size:.78rem;color:rgba(255,255,255,.4);text-decoration:none;transition:color .15s}
+.footer-links a:hover{color:var(--amb)}
+.footer-chip{background:rgba(232,50,10,.15);color:#FF8066;border:1px solid rgba(232,50,10,.3);font-size:.7rem;font-weight:700;padding:3px 9px;border-radius:20px}
+ 
+/* ── RESPONSIVE ── */
+@media(max-width:800px){
+  .page-layout{grid-template-columns:1fr}
+  .sidebar{position:static}
+  .contacto-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  nav{display:none}
+  nav.open{display:flex;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:var(--azul);padding:12px 20px;border-bottom:1px solid rgba(255,255,255,.1);box-shadow:0 8px 24px rgba(0,0,0,.3);z-index:200}
+  .menu-btn{display:flex}
+  .hdr{position:relative}
+  .hdr-badge{display:none}
+  .footer-inner{flex-direction:column;align-items:flex-start;gap:12px}
+}
+</style>
 </head>
 <body>
-
-<!-- BARRA DE AVISO -->
-<div class="barra-aviso">
-  ⚠️ El SOAT es OBLIGATORIO en Perú — Este sitio es solo informativo · No vendemos seguros
+ 
+<div class="topbar">
+  ⚠️ El SOAT es <strong>OBLIGATORIO</strong> en Perú · Este sitio es solo informativo · No vendemos seguros
 </div>
-
-<!-- HEADER -->
+ 
 <header>
-  <div class="header-inner">
-    <a href="index.html" class="logo" aria-label="portalsoatinfo — ir al inicio">
-      <svg class="logo-escudo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M18 2 L33 8 L33 18C33 27 26 33 18 35C10 33 3 27 3 18 L3 8 Z" fill="#CC0000"/>
-        <rect x="14" y="2.5" width="8" height="30.5" fill="white" opacity="0.22"/>
-        <circle cx="18" cy="16" r="4.5" fill="white" opacity="0.9"/>
-        <circle cx="18" cy="16" r="2.5" fill="#CC0000"/>
-        <line x1="18" y1="9" x2="18" y2="7" stroke="white" stroke-width="1.5" opacity="0.85"/>
-        <line x1="18" y1="23" x2="18" y2="25" stroke="white" stroke-width="1.5" opacity="0.85"/>
-        <line x1="11" y1="16" x2="9" y2="16" stroke="white" stroke-width="1.5" opacity="0.85"/>
-        <line x1="25" y1="16" x2="27" y2="16" stroke="white" stroke-width="1.5" opacity="0.85"/>
+  <div class="hdr">
+    <a href="index.html" class="logo" aria-label="portalsoatinfo inicio">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M18 2L33 8V18C33 27 26 33 18 35C10 33 3 27 3 18V8Z" fill="#E8320A"/>
+        <rect x="14" y="2.5" width="8" height="31" fill="white" opacity="0.15"/>
+        <circle cx="18" cy="16.5" r="5" fill="white" opacity="0.9"/>
+        <circle cx="18" cy="16.5" r="2.5" fill="#E8320A"/>
+        <line x1="18" y1="9" x2="18" y2="7" stroke="white" stroke-width="1.6"/>
+        <line x1="18" y1="24" x2="18" y2="26" stroke="white" stroke-width="1.6"/>
+        <line x1="11" y1="16.5" x2="9" y2="16.5" stroke="white" stroke-width="1.6"/>
+        <line x1="25" y1="16.5" x2="27" y2="16.5" stroke="white" stroke-width="1.6"/>
       </svg>
-      <span class="logo-texto">portal<span>soat</span>info</span>
+      <span class="logo-txt">portal<span>soat</span>info</span>
     </a>
-
-    <nav id="nav-principal" role="navigation" aria-label="Navegación principal">
-      <a href="index.html">Inicio</a>
-      <a href="index.html#que-es">¿Qué es el SOAT?</a>
+    <nav id="nav-main" role="navigation" aria-label="Navegación">
+      <a href="index.html#que-es">¿Qué es?</a>
       <a href="index.html#coberturas">Coberturas</a>
       <a href="index.html#como-funciona">¿Cómo funciona?</a>
-      <a href="index.html#faq">Preguntas Frecuentes</a>
-      <a href="terminos.html" style="color:var(--rojo);">Términos</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#comparativa">SOAT vs AFOCAT</a>
+      <a href="terminos.html" class="active">Términos</a>
     </nav>
-
-    <span class="badge-informativo">Solo informativo · No somos aseguradora</span>
-
-    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-principal">☰</button>
+    <span class="hdr-badge">Solo informativo · No vendemos SOAT</span>
+    <button class="menu-btn" id="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
   </div>
 </header>
-
-<!-- CONTENIDO PRINCIPAL -->
-<main>
-  <div class="pagina-terminos">
-
-    <h1>Términos y Condiciones de Uso</h1>
-    <span class="fecha-act">Última actualización: Mayo de 2025</span>
-
-    <p>Bienvenido a <strong>portalsoatinfo</strong> (en adelante, "el Portal"). Al acceder y utilizar este sitio web, usted acepta los presentes Términos y Condiciones. Si no está de acuerdo con alguno de estos términos, le solicitamos abstenerse de usar el Portal.</p>
-
-    <h2>1. Identificación del Portal</h2>
-    <p><strong>portalsoatinfo</strong> es un portal informativo independiente cuyo objetivo es brindar información educativa y de utilidad pública sobre el Seguro Obligatorio de Accidentes de Tránsito (SOAT) en la República del Perú.</p>
-    <p>Este portal <strong>no es una aseguradora, corredor de seguros, broker, agente ni intermediario comercial</strong> de ningún tipo. No tenemos relación comercial, de afiliación ni de representación con ninguna compañía de seguros, entidad financiera ni organismo gubernamental.</p>
-    <ul>
-      <li>Nombre del portal: portalsoatinfo</li>
-      <li>Sitio web: portalsoatinfo.com</li>
-      <li>Correo de contacto: contacto@portalsoatinfo.com</li>
-      <li>País de operación: República del Perú</li>
-    </ul>
-
-    <h2>2. Naturaleza y propósito del contenido</h2>
-    <p>Todo el contenido publicado en portalsoatinfo tiene fines <strong>exclusivamente informativos y educativos</strong>. La información proporcionada:</p>
-    <ul>
-      <li>No constituye asesoría legal, financiera ni comercial de ningún tipo.</li>
-      <li>No reemplaza la consulta con profesionales especializados (abogados, asesores de seguros, médicos).</li>
-      <li>No constituye una oferta, propuesta ni solicitud de contratación de seguros.</li>
-      <li>Está redactada con fines divulgativos y de orientación general al ciudadano peruano.</li>
-    </ul>
-
-    <h2>3. Precisión y actualización de la información</h2>
-    <p>Si bien nos esforzamos por mantener la información precisa y actualizada, la normativa, los montos (expresados en UIT), los procedimientos y las disposiciones sobre el SOAT pueden cambiar. Por ello:</p>
-    <ul>
-      <li>Toda información sobre coberturas, montos o procedimientos debe ser verificada en las fuentes oficiales: <a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener">SBS Perú</a>, <a href="https://www.mtc.gob.pe" target="_blank" rel="nofollow noopener">MTC Perú</a> y <a href="https://www.apeseg.org.pe" target="_blank" rel="nofollow noopener">APESEG</a>.</li>
-      <li>portalsoatinfo no garantiza que la información esté libre de errores u omisiones.</li>
-      <li>El Portal se reserva el derecho de actualizar, corregir o eliminar contenido sin previo aviso.</li>
-    </ul>
-
-    <h2>4. Limitación de responsabilidad</h2>
-    <p>portalsoatinfo, sus operadores, colaboradores y editores no serán responsables por:</p>
-    <ul>
-      <li>Decisiones tomadas por el usuario basándose en la información del Portal.</li>
-      <li>Daños directos, indirectos, incidentales o consecuentes derivados del uso del Portal.</li>
-      <li>Errores, omisiones o inexactitudes en el contenido publicado.</li>
-      <li>Interrupciones o problemas técnicos en el acceso al Portal.</li>
-      <li>Contenido de sitios web de terceros enlazados desde el Portal.</li>
-    </ul>
-
-    <h2>5. Propiedad intelectual</h2>
-    <p>Todo el contenido original de portalsoatinfo, incluyendo textos, diseño gráfico, estructura, logotipo y código fuente, está protegido por las leyes de propiedad intelectual aplicables en el Perú (Decreto Legislativo N° 822 y normas concordantes).</p>
-    <p>Queda prohibida la reproducción total o parcial, distribución, modificación o uso comercial del contenido sin autorización escrita previa de portalsoatinfo. Se permite citar el Portal como fuente informativa siempre que se indique la autoría y el enlace correspondiente.</p>
-
-    <h2 id="privacidad">6. Política de Privacidad</h2>
-    <p><strong>portalsoatinfo no recopila datos personales</strong> de sus usuarios de forma activa. No cuenta con formularios de registro, suscripción de pago ni bases de datos de usuarios.</p>
-    <p>Sin embargo, como todo sitio web, el Portal puede recopilar automáticamente cierta información técnica a través de herramientas de análisis:</p>
-    <ul>
-      <li><strong>Google Analytics:</strong> Herramienta de análisis de audiencia que recopila datos agregados y anónimos sobre el comportamiento de los visitantes (páginas vistas, tiempo de permanencia, país de origen). No se recopilan datos personales identificables.</li>
-      <li><strong>Cookies técnicas:</strong> El Portal puede utilizar cookies de sesión y de análisis para mejorar la experiencia del usuario.</li>
-    </ul>
-    <p>Los datos recopilados no se venden, ceden ni comparten con terceros, salvo lo requerido por las herramientas de análisis mencionadas bajo sus propias políticas de privacidad.</p>
-
-    <h2>7. Política de Cookies</h2>
-    <p>El Portal utiliza los siguientes tipos de cookies:</p>
-    <ul>
-      <li><strong>Cookies técnicas esenciales:</strong> Necesarias para el funcionamiento básico del sitio. No requieren consentimiento.</li>
-      <li><strong>Cookies analíticas (Google Analytics):</strong> Permiten medir el tráfico y comportamiento en el Portal. Pueden desactivarse desde la configuración del navegador o mediante complementos como el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="nofollow noopener">complemento de inhabilitación de Google Analytics</a>.</li>
-    </ul>
-    <p>Al continuar navegando por el Portal, el usuario acepta el uso de estas cookies. Puede configurar su navegador para rechazar cookies, aunque esto podría afectar la funcionalidad del sitio.</p>
-
-    <h2>8. Publicidad (Google AdSense)</h2>
-    <p>portalsoatinfo puede mostrar anuncios publicitarios a través del programa <strong>Google AdSense</strong>, operado por Google LLC. Estos anuncios son seleccionados automáticamente por Google y pueden basarse en el contenido del sitio o en el historial de navegación del usuario.</p>
-    <p>La presencia de anuncios en el Portal:</p>
-    <ul>
-      <li>No implica respaldo, recomendación ni relación comercial con los anunciantes.</li>
-      <li>Se rige por las <a href="https://policies.google.com/technologies/ads" target="_blank" rel="nofollow noopener">políticas de publicidad de Google</a>.</li>
-      <li>portalsoatinfo no controla el contenido específico de los anuncios mostrados.</li>
-      <li>El usuario puede gestionar sus preferencias publicitarias en <a href="https://adssettings.google.com" target="_blank" rel="nofollow noopener">Configuración de anuncios de Google</a>.</li>
-    </ul>
-
-    <h2>9. Sin relación comercial con aseguradoras</h2>
-    <p>portalsoatinfo declara expresamente que:</p>
-    <ul>
-      <li>No recibe comisiones, pagos ni beneficios de ninguna aseguradora, AFOCAT ni intermediario de seguros.</li>
-      <li>No tiene acuerdos comerciales de afiliación con ninguna entidad que comercialice SOAT.</li>
-      <li>Las menciones de aseguradoras en el Portal son estrictamente informativas y referenciales.</li>
-      <li>Los enlaces a sitios externos son proporcionados como referencia y no implican respaldo o relación comercial.</li>
-    </ul>
-
-    <h2>10. Links a sitios externos</h2>
-    <p>El Portal puede contener enlaces a sitios web de terceros (SBS, MTC, APESEG, aseguradoras, etc.) con fines informativos. portalsoatinfo no tiene control sobre el contenido de dichos sitios y no asume responsabilidad por su disponibilidad, precisión ni políticas de privacidad.</p>
-
-    <h2>11. Modificaciones a los Términos</h2>
-    <p>portalsoatinfo se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones entrarán en vigor desde el momento de su publicación en el Portal. Se recomienda revisar periódicamente esta página para estar al tanto de los cambios.</p>
-
-    <h2>12. Legislación aplicable y jurisdicción</h2>
-    <p>Estos Términos y Condiciones se rigen por las leyes de la <strong>República del Perú</strong>. Cualquier controversia derivada del uso del Portal se someterá a la jurisdicción de los tribunales competentes de la ciudad de Lima, Perú, salvo disposición legal en contrario.</p>
-
-    <h2>13. Contacto</h2>
-    <p>Para consultas, sugerencias o reportes sobre el contenido del Portal, puede comunicarse a través de:</p>
-    <ul>
-      <li><strong>Correo electrónico:</strong> contacto@portalsoatinfo.com</li>
-      <li><strong>Sitio web:</strong> <a href="https://portalsoatinfo.com">portalsoatinfo.com</a></li>
-    </ul>
-    <p>Respondemos consultas en un plazo de 5 a 10 días hábiles.</p>
-
-    <p style="margin-top:40px;padding:16px 20px;background:var(--gris-claro);border-radius:var(--radio);border-left:3px solid var(--rojo);font-size:0.9rem;color:var(--gris-medio);">
-      <strong>Recuerde:</strong> portalsoatinfo es solo informativo. Para contratar su SOAT, para reclamar coberturas o para obtener información oficial, acuda directamente a las aseguradoras autorizadas o a los organismos del Estado: <a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener">SBS</a> · <a href="https://www.mtc.gob.pe" target="_blank" rel="nofollow noopener">MTC</a> · <a href="https://www.apeseg.org.pe" target="_blank" rel="nofollow noopener">APESEG</a>
-    </p>
-
-    <p style="text-align:center;margin-top:32px;">
-      <a href="index.html" style="color:var(--rojo);font-weight:700;text-decoration:none;">← Volver al portal principal</a>
-    </p>
-
+ 
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <div class="breadcrumb-in">
+    <a href="index.html">Inicio</a>
+    <span>›</span>
+    <span>Términos y Condiciones</span>
   </div>
-</main>
-
+</div>
+ 
+<!-- Layout con sidebar -->
+<div class="page-layout">
+ 
+  <!-- SIDEBAR -->
+  <aside class="sidebar" aria-label="Índice de secciones">
+    <div class="sidebar-card">
+      <div class="sidebar-head"><p>Índice de secciones</p></div>
+      <nav class="sidebar-nav" aria-label="Índice">
+        <a href="#s1">1. Identificación</a>
+        <a href="#s2">2. Naturaleza del contenido</a>
+        <a href="#s3">3. Precisión y actualización</a>
+        <a href="#s4">4. Limitación de responsabilidad</a>
+        <a href="#s5">5. Propiedad intelectual</a>
+        <a href="#s6" id="privacidad">6. Política de Privacidad</a>
+        <a href="#s7">7. Política de Cookies</a>
+        <a href="#s8">8. Publicidad (AdSense)</a>
+        <a href="#s9">9. Sin relación comercial</a>
+        <a href="#s10">10. Links externos</a>
+        <a href="#s11">11. Modificaciones</a>
+        <a href="#s12">12. Jurisdicción</a>
+        <a href="#s13">13. Contacto</a>
+      </nav>
+    </div>
+    <div class="sidebar-nota">
+      <strong>⚠️ Aviso importante</strong>
+      portalsoatinfo no vende seguros ni tiene relación con aseguradoras. Para contratar su SOAT acuda a entidades autorizadas por la SBS.
+    </div>
+    <a href="index.html" class="sidebar-link">← Volver al portal</a>
+  </aside>
+ 
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="terminos-content" id="main-content">
+ 
+    <div class="tc-header">
+      <span class="kicker">Documento legal</span>
+      <h1>Términos y Condiciones de Uso</h1>
+      <div class="fecha">
+        Última actualización:
+        <span>Mayo 2025</span>
+      </div>
+    </div>
+ 
+    <div class="clausula" id="s1">
+      <h2><span class="clausula-num">1</span> Identificación del portal</h2>
+      <p><strong>portalsoatinfo</strong> es un portal informativo independiente cuyo objetivo es brindar información educativa y de utilidad pública sobre el Seguro Obligatorio de Accidentes de Tránsito (SOAT) en la República del Perú.</p>
+      <div class="warn-box">
+        <strong>Este portal NO es una aseguradora, corredor de seguros, broker, agente ni intermediario comercial</strong> de ningún tipo. No tenemos relación comercial, de afiliación ni de representación con ninguna compañía de seguros, entidad financiera ni organismo gubernamental.
+      </div>
+      <ul>
+        <li>Nombre del portal: <strong>portalsoatinfo</strong></li>
+        <li>Sitio web: portalsoatinfo.com</li>
+        <li>Correo de contacto: contacto@portalsoatinfo.com</li>
+        <li>País de operación: República del Perú</li>
+      </ul>
+    </div>
+ 
+    <div class="clausula" id="s2">
+      <h2><span class="clausula-num">2</span> Naturaleza y propósito del contenido</h2>
+      <p>Todo el contenido publicado en portalsoatinfo tiene fines <strong>exclusivamente informativos y educativos</strong>. La información proporcionada:</p>
+      <ul>
+        <li>No constituye asesoría legal, financiera ni comercial de ningún tipo.</li>
+        <li>No reemplaza la consulta con profesionales especializados (abogados, asesores de seguros).</li>
+        <li>No constituye una oferta, propuesta ni solicitud de contratación de seguros.</li>
+        <li>Está redactada con fines divulgativos y de orientación general al ciudadano peruano.</li>
+      </ul>
+    </div>
+ 
+    <div class="clausula" id="s3">
+      <h2><span class="clausula-num">3</span> Precisión y actualización de la información</h2>
+      <p>Nos esforzamos por mantener la información precisa y actualizada. Sin embargo, la normativa, los montos (expresados en UIT), los procedimientos y las disposiciones sobre el SOAT pueden cambiar.</p>
+      <div class="info-box">
+        <strong>Fuentes oficiales recomendadas</strong>
+        Toda información sobre coberturas, montos o procedimientos debe verificarse en: <a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener">SBS Perú</a>, <a href="https://www.mtc.gob.pe" target="_blank" rel="nofollow noopener">MTC Perú</a> y <a href="https://www.apeseg.org.pe" target="_blank" rel="nofollow noopener">APESEG</a>.
+      </div>
+      <ul>
+        <li>portalsoatinfo no garantiza que la información esté libre de errores u omisiones.</li>
+        <li>El portal se reserva el derecho de actualizar, corregir o eliminar contenido sin previo aviso.</li>
+      </ul>
+    </div>
+ 
+    <div class="clausula" id="s4">
+      <h2><span class="clausula-num">4</span> Limitación de responsabilidad</h2>
+      <p>portalsoatinfo, sus operadores, colaboradores y editores no serán responsables por:</p>
+      <ul>
+        <li>Decisiones tomadas por el usuario basándose en la información del portal.</li>
+        <li>Daños directos, indirectos, incidentales o consecuentes derivados del uso del portal.</li>
+        <li>Errores, omisiones o inexactitudes en el contenido publicado.</li>
+        <li>Interrupciones o problemas técnicos en el acceso al portal.</li>
+        <li>Contenido de sitios web de terceros enlazados desde el portal.</li>
+      </ul>
+    </div>
+ 
+    <div class="clausula" id="s5">
+      <h2><span class="clausula-num">5</span> Propiedad intelectual</h2>
+      <p>Todo el contenido original de portalsoatinfo, incluyendo textos, diseño gráfico, estructura, logotipo y código fuente, está protegido por las leyes de propiedad intelectual aplicables en el Perú (<strong>Decreto Legislativo N° 822</strong> y normas concordantes).</p>
+      <p>Queda prohibida la reproducción total o parcial, distribución, modificación o uso comercial del contenido sin autorización escrita previa. Se permite citar el portal como fuente informativa siempre que se indique la autoría y el enlace correspondiente.</p>
+    </div>
+ 
+    <div class="clausula" id="s6">
+      <h2><span class="clausula-num">6</span> Política de Privacidad</h2>
+      <p><strong>portalsoatinfo no recopila datos personales</strong> de sus usuarios de forma activa. No cuenta con formularios de registro, suscripción de pago ni bases de datos de usuarios.</p>
+      <p>Sin embargo, como todo sitio web, el portal puede recopilar automáticamente cierta información técnica a través de herramientas de análisis:</p>
+      <div class="info-box">
+        <strong>Google Analytics</strong>
+        Herramienta de análisis que recopila datos agregados y anónimos sobre el comportamiento de los visitantes (páginas vistas, tiempo de permanencia, país de origen). No se recopilan datos personales identificables.
+      </div>
+      <ul>
+        <li>Los datos recopilados no se venden, ceden ni comparten con terceros.</li>
+        <li>Se utilizan únicamente para mejorar la experiencia del usuario y el contenido del portal.</li>
+        <li>El usuario puede solicitar información sobre sus datos a: contacto@portalsoatinfo.com</li>
+      </ul>
+    </div>
+ 
+    <div class="clausula" id="s7">
+      <h2><span class="clausula-num">7</span> Política de Cookies</h2>
+      <p>El portal utiliza los siguientes tipos de cookies:</p>
+      <ul>
+        <li><strong>Cookies técnicas esenciales:</strong> Necesarias para el funcionamiento básico del sitio. No requieren consentimiento.</li>
+        <li><strong>Cookies analíticas (Google Analytics):</strong> Permiten medir el tráfico y comportamiento. Pueden desactivarse desde la configuración del navegador o mediante el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="nofollow noopener">complemento de inhabilitación de Google Analytics</a>.</li>
+      </ul>
+      <p>Al continuar navegando por el portal, el usuario acepta el uso de estas cookies. Puede configurar su navegador para rechazar cookies, aunque esto podría afectar la funcionalidad del sitio.</p>
+    </div>
+ 
+    <div class="clausula" id="s8">
+      <h2><span class="clausula-num">8</span> Publicidad — Google AdSense</h2>
+      <p>portalsoatinfo puede mostrar anuncios publicitarios a través del programa <strong>Google AdSense</strong>, operado por Google LLC. Estos anuncios son seleccionados automáticamente por Google.</p>
+      <ul>
+        <li>La presencia de anuncios no implica respaldo ni relación comercial con los anunciantes.</li>
+        <li>Se rige por las <a href="https://policies.google.com/technologies/ads" target="_blank" rel="nofollow noopener">políticas de publicidad de Google</a>.</li>
+        <li>portalsoatinfo no controla el contenido específico de los anuncios mostrados.</li>
+        <li>El usuario puede gestionar sus preferencias en <a href="https://adssettings.google.com" target="_blank" rel="nofollow noopener">Configuración de anuncios de Google</a>.</li>
+      </ul>
+    </div>
+ 
+    <div class="clausula" id="s9">
+      <h2><span class="clausula-num">9</span> Sin relación comercial con aseguradoras</h2>
+      <div class="warn-box">
+        <strong>Declaración de independencia comercial</strong>
+        portalsoatinfo declara expresamente que no recibe comisiones, pagos ni beneficios de ninguna aseguradora, AFOCAT ni intermediario de seguros.
+      </div>
+      <ul>
+        <li>No tenemos acuerdos de afiliación con entidades que comercialicen SOAT.</li>
+        <li>Las menciones de aseguradoras son estrictamente informativas y referenciales.</li>
+        <li>Los enlaces a sitios externos son referencias, no implican respaldo comercial.</li>
+      </ul>
+    </div>
+ 
+    <div class="clausula" id="s10">
+      <h2><span class="clausula-num">10</span> Links a sitios externos</h2>
+      <p>El portal puede contener enlaces a sitios web de terceros (SBS, MTC, APESEG, aseguradoras) con fines informativos. portalsoatinfo no tiene control sobre el contenido de dichos sitios y no asume responsabilidad por su disponibilidad, precisión ni políticas de privacidad.</p>
+    </div>
+ 
+    <div class="clausula" id="s11">
+      <h2><span class="clausula-num">11</span> Modificaciones a los Términos</h2>
+      <p>portalsoatinfo se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones entrarán en vigor desde el momento de su publicación. Se recomienda revisar periódicamente esta página para estar al tanto de los cambios.</p>
+    </div>
+ 
+    <div class="clausula" id="s12">
+      <h2><span class="clausula-num">12</span> Legislación aplicable y jurisdicción</h2>
+      <p>Estos Términos y Condiciones se rigen por las leyes de la <strong>República del Perú</strong>. Cualquier controversia derivada del uso del portal se someterá a la jurisdicción de los tribunales competentes de la ciudad de <strong>Lima, Perú</strong>, salvo disposición legal en contrario.</p>
+    </div>
+ 
+    <div class="clausula" id="s13">
+      <h2><span class="clausula-num">13</span> Contacto</h2>
+      <p>Para consultas, sugerencias o reportes sobre el contenido del portal, puede comunicarse a través de:</p>
+      <div class="contacto-grid">
+        <div class="contacto-item">
+          <p class="c-label">Correo electrónico</p>
+          <p class="c-val">contacto@portalsoatinfo.com</p>
+        </div>
+        <div class="contacto-item">
+          <p class="c-label">Sitio web</p>
+          <p class="c-val"><a href="https://portalsoatinfo.com" style="color:var(--r)">portalsoatinfo.com</a></p>
+        </div>
+      </div>
+      <p style="margin-top:14px;font-size:.85rem;color:var(--gris2)">Respondemos consultas en un plazo de 5 a 10 días hábiles.</p>
+    </div>
+ 
+  </main>
+</div>
+ 
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-top">
-      <div>
-        <a href="index.html" class="footer-logo">
-          <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M18 2 L33 8 L33 18C33 27 26 33 18 35C10 33 3 27 3 18 L3 8 Z" fill="#CC0000"/>
-            <rect x="14" y="2.5" width="8" height="30.5" fill="white" opacity="0.22"/>
-            <circle cx="18" cy="16" r="4.5" fill="white" opacity="0.9"/>
-            <circle cx="18" cy="16" r="2.5" fill="#CC0000"/>
-          </svg>
-          <span class="footer-logo-txt">portal<span>soat</span>info</span>
-        </a>
-        <p class="footer-desc">portalsoatinfo es un portal informativo independiente sobre el SOAT en Perú. No somos una aseguradora ni intermediario. La información aquí presentada tiene fines educativos.</p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Navegación</h4>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="index.html#que-es">¿Qué es el SOAT?</a></li>
-          <li><a href="index.html#coberturas">Coberturas</a></li>
-          <li><a href="index.html#faq">Preguntas Frecuentes</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Legal y fuentes</h4>
-        <ul>
-          <li><a href="terminos.html">Términos y Condiciones</a></li>
-          <li><a href="terminos.html#privacidad">Política de Privacidad</a></li>
-          <li><a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener">SBS Perú</a></li>
-          <li><a href="https://www.mtc.gob.pe" target="_blank" rel="nofollow noopener">MTC Perú</a></li>
-          <li><a href="https://www.apeseg.org.pe" target="_blank" rel="nofollow noopener">APESEG</a></li>
-        </ul>
-      </div>
+    <a href="index.html" class="footer-logo" aria-label="portalsoatinfo inicio">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M18 2L33 8V18C33 27 26 33 18 35C10 33 3 27 3 18V8Z" fill="#E8320A"/>
+        <rect x="14" y="2.5" width="8" height="31" fill="white" opacity="0.15"/>
+        <circle cx="18" cy="16.5" r="4.5" fill="white" opacity="0.9"/>
+        <circle cx="18" cy="16.5" r="2.2" fill="#E8320A"/>
+      </svg>
+      <span class="footer-logo-txt">portal<span>soat</span>info</span>
+    </a>
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="index.html#coberturas">Coberturas</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="terminos.html">Términos</a>
+      <a href="https://www.sbs.gob.pe" target="_blank" rel="nofollow noopener">SBS Perú</a>
+      <a href="https://www.mtc.gob.pe" target="_blank" rel="nofollow noopener">MTC Perú</a>
     </div>
-
-    <div class="footer-bottom">
-      <span>© <span id="anno-actual">2025</span> portalsoatinfo · Todos los derechos reservados · Lima, Perú</span>
-      <span class="footer-badge-info">🛡️ Sitio informativo — No vendemos SOAT</span>
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+      <span class="footer-chip">⚠️ Sitio informativo</span>
+      <span style="font-size:.76rem">© <span id="yr">2025</span> portalsoatinfo · Lima, Perú</span>
     </div>
   </div>
 </footer>
-
-<script src="script.js"></script>
+ 
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var btn = document.getElementById('menu-btn');
+  var nav = document.getElementById('nav-main');
+  if(btn && nav){
+    btn.addEventListener('click', function(){
+      var o = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', o ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+  // Resaltar sección activa en sidebar al hacer scroll
+  var links = document.querySelectorAll('.sidebar-nav a');
+  var sections = [];
+  links.forEach(function(l){
+    var id = l.getAttribute('href').replace('#','');
+    var el = document.getElementById(id);
+    if(el) sections.push({el:el, link:l});
+  });
+  window.addEventListener('scroll', function(){
+    var scrollY = window.scrollY + 100;
+    sections.forEach(function(s){
+      if(s.el.offsetTop <= scrollY){
+        links.forEach(function(l){ l.classList.remove('active'); });
+        s.link.classList.add('active');
+      }
+    });
+  }, {passive:true});
+})();
+</script>
 </body>
 </html>
